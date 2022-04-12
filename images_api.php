@@ -5,8 +5,8 @@
 
 */
 error_reporting(E_ALL ^ E_NOTTCE);//迫不得已，后续改进ing
-$img_jpg = glob("111/*.{jpg}",GLOB_BRACE);//jpe文件夹随机抽取//111为一个类型
-$img_png = glob("222/*.{png}",GLOB_BRACE);//png文件夹随机抽取//222为一个类型
+$img_jpg = glob("111/*.{jpg}",GLOB_BRACE);//jpe文件夹随机抽取//111为目录
+$img_png = glob("222/*.{png}",GLOB_BRACE);//png文件夹随机抽取//222为目录
 $img_all = glob("assets/background/*.{jpg,png}",GLOB_BRACE);//全部文件夹随机抽取
 $img_j = array_rand($img_jpg);
 $img_p = array_rand($img_png);
